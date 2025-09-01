@@ -110,7 +110,7 @@ Phishing email was sent successful to all the target users and click they clicke
 
 The results were as shown below four of target users submitted their credentials.    
 
-[screenshot](images/project/report2.png)  
+![screenshot](images/project/report2.png)  
 
 This is sample of credentials captured, user **email** and **password** were captured.  
 
