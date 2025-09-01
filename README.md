@@ -1,8 +1,11 @@
-## 1. Executive Summary  
-This report documents the activities, configurations, and outcomes of a phishing simulation I conducted using the Gophish framework. The exercise involved creating and deploying phishing campaigns with custom landing pages, SMTP configuration, and tracking mechanisms to assess delivery, engagement, and credential submission effectiveness. Key issues such as SMTP authentication errors and improper sender formatting were identified and resolved during the setup process. The simulation was successfully executed, with phishing emails delivered, tracked, and linked to operational landing pages. Captured credential data was securely logged as part of the controlled test.
+# Phishing Simulation With Gophish  
+
+## 1. Introduction  
+
+This project involved setting up and running a phishing simulation using the Gophish framework. The goal was to understand how phishing campaigns are created, deployed, and tracked, while also identifying common issues that arise during configuration and testing. The exercise was conducted in a controlled and ethical environment for research and training purposes..
 
 
-## 2. Purpose and Scope  
+## 2. Purpose of the Project 
 
 - Provide a detailed record of the phishing simulation workflow, tools, and configurations used.  
 - Highlight technical challenges encountered during setup and the solutions implemented.  
@@ -16,9 +19,11 @@ This report documents the activities, configurations, and outcomes of a phishing
 - **Web Browser:** Used to interact with the Gophish dashboard and access the landing pages.  
 - **Custom HTML Code:** Handwritten fake login pages for credential harvesting simulations.  
 - **SMTP Server (Gmail-based):** For sending phishing emails.  
-- **Bash:** For server setup, IP configuration, and network testing.  
+- **Bash:** For server setup, IP configuration, and network testing.
 
-## 4. Setup  
+## 4. Methodoloy
+
+### 4.1 Setup  
 
 Start the gophish    
 ```
@@ -42,6 +47,13 @@ Run the program
 ```
 ./gophish
 ```
+### 4.2 Ip Address Used  
+
+**Phishing Host IP Address:** https://127.0.0.1:3333
+ This IP was used to host the phishing landing pages and serve the HTML content to targets.
+
+- You will be given a default password which you must change the password in the first time.
+  
 ![sreenshot](images/password.png)
 
 
