@@ -56,5 +56,34 @@ Run the program
   
 ![sreenshot](images/password.png)
 
+### 4.2 Gmail SMTP server configuration  
+
+In your gmail account, on the search bar **App password** 
+
+![screenshot](images/project/gmail.png)  
+
+Gmail will redirect you to enter your password for confirmation, and for you to get the temporary password you must have authenticated your email with phone no or Authenticator App.  
+
+![screnshot](images/project/gmail1.png)  
+
+### 4.3 Sending Profile  
+
+On the sending profile I used gmail SMTP server and port   
+```
+smtp.gmail.com:587
+```
+![screenshot](images/project/sending.png)  
+
+When in the password you enter the one time password provided by gmail and save the profile.
+
+![screenshot](images/project/gmail1.png)  
+
+### 4.4 Landing Page  
+
+I made a basic **HTML** landing page resembling exactly gmail login page to capture **email** and **password,** and the target user logs in the credentials are captured and they will be redirected to the real gmail page making it look real and unnoticed.  
+
+![screenshot](images/project/login.png)  
+
+
 
 
