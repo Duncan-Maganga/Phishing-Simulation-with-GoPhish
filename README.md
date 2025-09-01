@@ -84,6 +84,38 @@ I made a basic **HTML** landing page resembling exactly gmail login page to capt
 
 ![screenshot](images/project/login.png)  
 
+### 4.5 Email Template  
+
+For the email template I used the source for the original email, this ensures it carries all the features of the email reducing the chances of target user to know the phish email.  
+
+![screenshot](images/phone.jpeg)  
+
+### 4.6 Setting the Target  
+
+I made a small list of email to send Phishing email, you can also import in bulk.  
+
+![screenshot](images/project/group.png)  
+
+### 4.7 Creating campaigns  
+
+During campaign launch, the IP address configured should be the local IP of your Kali system.
+
+![screenshot](images/projects/camp.png)  
+
+### 4.8 Results  
+
+Phishing email was sent successful to all the target users and click they clicked entering thier credentials.  
+
+![sreenshot](images/project/report1.png)  
+
+The results were as shown below four of target users submitted their credentials.    
+
+[screenshot](images/project/report2.png)  
+
+This is sample of credentials captured, user **email** and **password** were captured.  
+
+![screenshort](images/password2.png)  
+
 
 
 
