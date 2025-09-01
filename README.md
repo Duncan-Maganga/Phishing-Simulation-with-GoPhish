@@ -100,7 +100,7 @@ I made a small list of email to send Phishing email, you can also import in bulk
 
 During campaign launch, the IP address configured should be the local IP of your Kali system.
 
-![screenshot](images/projects/camp.png)  
+![screenshot](images/project/camp.png)  
 
 ### 4.8 Results  
 
