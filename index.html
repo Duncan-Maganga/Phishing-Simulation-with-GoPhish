@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Company Mail – Security Awareness Training</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    :root { --bg:#f6f7fb; --card:#fff; --text:#1f2937; --muted:#6b7280; --accent:#3b82f6; --border:#e5e7eb; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Arial, "Apple Color Emoji","Segoe UI Emoji"; background:var(--bg); color:var(--text); }
+    .wrap { min-height: 100svh; display:flex; align-items:center; justify-content:center; padding:24px; }
+    .card { width:100%; max-width: 420px; background:var(--card); border:1px solid var(--border); border-radius:16px; box-shadow: 0 10px 30px rgba(0,0,0,.05); padding:28px; }
+    h1 { margin:0 0 8px; font-size: 20px; font-weight: 700; }
+    p { margin:0; color:var(--muted); }
+    .notice { background:#fff7ed; border:1px solid #fed7aa; color:#9a3412; padding:10px 12px; border-radius:10px; font-size: 12.5px; margin-top:12px; }
+    form { margin-top: 20px; display:grid; gap:14px; }
+    label { font-size: 13px; color:#374151; display:block; margin-bottom:6px; }
+    input[type="email"], input[type="password"] {
+      width:100%; padding:12px 12px; border:1px solid var(--border); border-radius:12px; font-size:14px; outline:none;
+    }
+    input[type="email"]:focus, input[type="password"]:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(59,130,246,.15); }
+    .row { display:flex; align-items:center; justify-content:space-between; gap:10px; }
+    .hint { font-size:12px; color:var(--muted); }
+    .actions { display:flex; align-items:center; justify-content:space-between; margin-top:4px; }
+    .btn {
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:10px 14px; border-radius:12px; border:1px solid transparent; font-weight:600; cursor:pointer; text-decoration:none;
+    }
+    .btn-primary { background:var(--accent); color:#fff; }
+    .link { font-size:12.5px; color:var(--accent); text-decoration:none; }
+    .footer { margin-top:16px; font-size:12px; color:var(--muted); }
+    .disclaimer { margin-top:10px; font-size:11.5px; color:#6b7280; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <h1>Company Mail</h1>
+      <p>Security Awareness Training Portal</p>
+      <div class="notice">
+        This is a training simulation for authorized employees. Do not enter personal or non-work passwords.
+      </div>
+
+      <!--
+        Gophish integration notes:
+        - The form "action" should include the RID so Gophish can attribute submissions.
+        - Use input names "username" and "password" for credential capture fields in Gophish.
+        - Consider disabling password storage in your Gophish settings and purge data after the test.
+      -->
+      <form method="post" action="/?rid={{.RID}}" autocomplete="off" novalidate>
+        <div>
+          <label for="email">Work email</label>
+          <input id="email" name="username" type="email" inputmode="email" placeholder="name@example.com"
+                 required autocomplete="off" />
+          <div class="hint">Use your work email. Do not reuse real personal passwords.</div>
+        </div>
+        <div>
+          <label for="password">Password (training only)</label>
+          <input id="password" name="password" type="password" placeholder="Enter training password"
+                 required autocomplete="new-password" />
+          <div class="hint">Recommended: use a unique training string, not your real password.</div>
+        </div>
+
+    
+        <div class="row">
+          <label style="display:flex;align-items:center;gap:8px;">
+            <input type="checkbox" name="remember" value="1" />
+            <span style="font-size:12.5px;color:#374151;">Remember this device</span>
+          </label>
+          <a class="link" href="https://intranet.example.com/security-awareness">Need help?</a>
+        </div>
+
+        <div class="actions">
+          <button class="btn btn-primary" type="submit">Continue</button>
+          <a class="link" href="https://intranet.example.com/policies/password-policy">Password policy</a>
+        </div>
+
+        
+        <input type="hidden" name="rid" value="{{.RID}}">
+      </form>
+
+      <div class="footer">
+        After submission, you will see a brief training explaining how to spot suspicious messages.
+      </div>
+      <div class="disclaimer">
+        For internal simulation only. No third-party marks or branding are used.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
