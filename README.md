@@ -138,7 +138,26 @@ In todays world social engineering is the widely used method to penetrate throug
 6. **Not Tracking Metrics That Matter:** Only looking at click rates misses the bigger picture, as a Opsec you need to measure reporting rates, time-to-click, and repeat offenders too.    
 7. **Exercise Mentality:** Some organizations run phishing tests once a year, phishing is evolving everyday, so constantly training should be ongoing and adaptive.  
 
+## 7. Remediatons  
 
+1. **Continous User Awareness Training -** Conduct regular cybersecurity awareness sessions to educate employees about phishing indicators such as suspicious links, unexpected login prompts, and urgent language.  
+2. Conduct exercises where employees practice identifying and reporting phishing attempts this improves awereness among emplyoees.    
+3. Ensure employees know how to report suspicious messages quickly and in timely manner.    
+4. Enable multi-factor authentication (MFA) for all critical systems to reduce the impact of credential theft and malicious login.  
+5. Configure email filtering and anti-phishing rules such as SPF, DKIM, and DMARC to block spoofed or malicious emails.  
+6. Deploy EDR such as CrowdStrike Falconto combine with SIEM such as Splunk and QRadar to detect abnormal login attempts or credential use.  
+7. Deliver specialized training to high-risk groups such as executives, finance, and HR who are frequent phishing targets.  
+8. Provide immediate learning opportunities for employees who fall for a simulation with short videos, and quick guides to avoid repeting the same mistake.  
+
+## 8. Conclusion   
+
+  This project successfully demonstrated the setup and execution of a phishing campaign using the Gophish framework. The simulation revealed how easily crafted phishing emails and landing pages can trick users into revealing sensitive information. It highlighted the critical role of human factors in cybersecurity and the importance of continuous training and awareness.  
+  Awareness training and simulations are essential to build resilience against real-world phishing attacks and also combining technical defenses such as MFA, email filtering with human-focused training creates a stronger overall defense. Phishing simulations are not just tests, they are learning opportunities. When implemented correctly, they reduce organizational risk, strengthen the security culture, and help ensure compliance with regulatory requirements.  
+
+  
+
+
+  In my next phishing simulation project, I will use a custom domain with custom email addresses, Evilginx, and a paid SMTP server to create a more realistic scenario.
 
 
 
