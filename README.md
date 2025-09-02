@@ -151,13 +151,13 @@ In todays world social engineering is the widely used method to penetrate throug
 
 ## 8. Conclusion   
 
-  This project successfully demonstrated the setup and execution of a phishing campaign using the Gophish framework. The simulation revealed how easily crafted phishing emails and landing pages can trick users into revealing sensitive information. It highlighted the critical role of human factors in cybersecurity and the importance of continuous training and awareness.  
-  Awareness training and simulations are essential to build resilience against real-world phishing attacks and also combining technical defenses such as MFA, email filtering with human-focused training creates a stronger overall defense. Phishing simulations are not just tests, they are learning opportunities. When implemented correctly, they reduce organizational risk, strengthen the security culture, and help ensure compliance with regulatory requirements.  
+- This project successfully demonstrated the setup and execution of a phishing campaign using the Gophish framework. The simulation revealed how easily crafted phishing emails and landing pages can trick users into revealing sensitive information. It highlighted the critical role of human factors in cybersecurity and the importance of continuous training and awareness.
+- Awareness training and simulations are essential to build resilience against real-world phishing attacks and also combining technical defenses such as MFA, email filtering with human-focused training creates a stronger overall defense. Phishing simulations are not just tests, they are learning opportunities. When implemented correctly, they reduce organizational risk, strengthen the security culture, and help ensure compliance with regulatory requirements.  
 
   
 
 
-  In my next phishing simulation project, I will use a custom domain with custom email addresses, Evilginx, and a paid SMTP server to create a more realistic scenario.
+  *In my next phishing simulation project, I will use a custom domain with custom email addresses, Evilginx, and a paid SMTP server to create a more realistic scenario.*
 
 
 
